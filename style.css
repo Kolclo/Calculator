@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: din-round,sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("background.jpg");
+}
+
+hr {
+    border: 2px solid #333;
+}
+
+#app {
+    background: #333;
+    max-width: 400px;
+    height: 700px;
+    border-radius: 15px;
+    border: #666 2px solid;
+}
+
+#screen {
+    grid-area: screen;
+    background: #888;
+    margin-bottom: 0.5rem;
+    height: 7rem;
+    border-radius: 5px;
+    max-width: 250px;
+    word-wrap: break-word;
+}
+
+#input, #output {
+    font-size: 1.2rem;
+    font-weight: 500;
+    height: 50%;
+}
+
+.container {
+    padding: 1rem;
+    display: grid;
+    grid-template-areas: 
+    'screen screen screen clear'
+    'one two three add'
+    'four five six subtract'
+    'seven eight nine multiply'
+    'backspace zero equal divide'
+    'power openBracket closeBracket squareRoot';
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Grid areas */
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#zero {
+    grid-area: zero;
+}
+
+#clear {
+    grid-area: clear;
+    background: #d35c5c;
+}
+
+#backspace {
+    grid-area: backspace;
+    background: #d35c5c;
+}
+
+#add {
+    grid-area: add;
+}
+
+#subtract {
+    grid-area: subtract;
+}
+
+#multiply {
+    grid-area: multiply;
+}
+
+#divide {
+    grid-area: divide;
+}
+
+#equal {
+    grid-area: equal;
+    background: #65d352;
+}
+
+#power {
+    grid-area: power;
+}
+
+#openBracket {
+    grid-area: openBracket;
+}
+
+#closeBracket {
+    grid-area: closeBracket;
+}
+
+#squareRoot {
+    grid-area: squareRoot;
+}
+
+
+.btn {
+    padding: 1rem;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    line-height: 0;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+}
+
+.btn:after {
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.btn:hover:not(:disabled) {
+    filter: brightness(1.1);
+}
+
+.operator {
+    background-color: #d1a758;
+}
+
+.operator:after {
+    background-color: #eebf67;
+}
+
+#equal:after {
+    background-color: #7bff64;
+}
+
+#backspace:after,
+#clear:after {
+    background-color: #ee6767;
+}

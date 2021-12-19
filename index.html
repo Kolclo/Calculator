@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <div class="container">
+            <div id="screen">
+                <h2 id="input"></h2>
+                <hr>
+                <h2 id="output"></h2>
+            </div>
+            <button onclick="clearText()" id="clear" class="btn">C</button>
+
+            <button onclick="backspace()" id="backspace" class="btn">🠔</button>
+
+            <button onclick="input(1)" id="one" class="btn">1</button>
+
+            <button onclick="input(2)" id="two" class="btn">2</button>
+
+            <button onclick="input(3)" id="three" class="btn">3</button>
+
+            <button onclick="input(4)" id="four" class="btn">4</button>
+
+            <button onclick="input(5)" id="five" class="btn">5</button>
+
+            <button onclick="input(6)" id="six" class="btn">6</button>
+
+            <button onclick="input(7)" id="seven" class="btn">7</button>
+
+            <button onclick="input(8)" id="eight" class="btn">8</button>
+
+            <button onclick="input(9)" id="nine" class="btn">9</button>
+
+            <button onclick="input(0)" id="zero" class="btn">0</button>
+
+            <button onclick="input(`*`)" id="multiply" class="btn operator">x</button>
+
+            <button onclick="input(`/`)" id="divide" class="btn operator">/</button>
+
+            <button onclick="input(`+`)" id="add" class="btn operator">+</button>
+
+            <button onclick="input(`-`)" id="subtract" class="btn operator">-</button>
+
+            <button onclick="input(`**`)" id="power" class="btn operator">^</button>
+
+            <button onclick="input(`(`)" id="openBracket" class="btn operator">(</button>
+
+            <button onclick="input(`)`)" id="closeBracket" class="btn operator">)</button>
+
+            <button onclick="squareRoot()" id="squareRoot" class="btn operator">√</button>
+
+            <button onclick="equal()" id="equal" class="btn">=</button>
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
